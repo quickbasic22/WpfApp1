@@ -1,0 +1,33 @@
+﻿<Window x:Name="MyUserControl" x:Class="WpfApp1.ShellView"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                 mc:Ignorable="d" 
+                 d:DesignHeight="600" 
+                d:DesignWidth="800"
+                Width="Auto" 
+                Height="Auto"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                VerticalContentAlignment="Center">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontSize="50" FontWeight="Bold" Content="Hello please write your name" />
+        <TextBox Grid.Column="0" Grid.Row="1" x:Name="Name" FontSize="50" FontFamily="Ravie" FontWeight="Bold" />
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="Age" FontSize="50" FontWeight="Bold" FontFamily="Showcard Gothic" />
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" x:Name="SayHello" Content="Click Me" FontSize="40" />
+
+        <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" x:Name="SubtractAge" Content="Subtract 10 from age" FontSize="40" />
+    </Grid>
+</Window>
